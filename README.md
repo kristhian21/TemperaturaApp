@@ -11,3 +11,8 @@ que se quieren convertir y luego hacer click en el boton de submit para realizar
 correspondiente conversión
 
 <img src="/img/s2.png" alt="funcionamiento">
+
+Despliegue en Heroku:
+
+<img src="/img/s3.png" alt="funcionamiento">
+<img src="/img/s4.png" alt="funcionamiento">
