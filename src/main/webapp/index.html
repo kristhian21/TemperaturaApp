@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AppTemperatura</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <section class="item1">
+        <div class="container">
+            <h1 class="titulo">Conversor de Temperatura</h1>
+            <p class="text">Esta aplicación web permite convertir grados Celsius a grados Fahrenheit y vice versa</p>
+        </div>
+    </section>
+    <section class="item1">
+        <div class="container">
+            <p class="text2">
+                Convertir de Celsius a Fahrenheit
+            </p>
+            <form action="/action_page.php">
+                <label for="celsius" class="text2">Celcius:</label><br>
+                <input type="text" id="celsius" name="celsius" value=""><br>
+                <label for="fahr" class="text2">Fahrenheit:</label><br>
+                <input type="text" id="fahr" name="fahr" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <hr width=100%>
+            <p class="text2">
+                Convertir de Fahrenheit a Celsius
+            </p>
+            <form action="/action_page.php">
+                <label for="fahr" class="text2">Fahrenheit:</label><br>
+                <input type="text" id="fahr" name="fahr" value=""><br><br>
+                <label for="celsius" class="text2">Celcius:</label><br>
+                <input type="text" id="celsius" name="celsius" value=""><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
