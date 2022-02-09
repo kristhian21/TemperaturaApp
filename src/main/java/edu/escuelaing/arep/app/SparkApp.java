@@ -11,7 +11,7 @@ public class SparkApp {
     public static void main(String[] args) {
         port(getPort());
         get("/hello", (req, res) -> "Hello World");
-        get("/", (req, res) -> IOUtils.toString(Spark.class.getResourceAsStream("/index.html")));
+        get("/", (req, res) -> IOUtils.toString(Spark.class.getResourceAsStream("index.html")));
     }
 
     static int getPort() {
