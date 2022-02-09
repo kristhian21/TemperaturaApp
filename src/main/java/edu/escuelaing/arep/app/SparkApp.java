@@ -7,7 +7,7 @@ public class SparkApp {
     public static void main(String[] args) {
         port(getPort());
         get("/hello", (req, res) -> "Hello World");
-        get("", (req, res) -> "Hola mundo");
+        get("/", (req, res) -> "Hello Wooooorld");
     }
 
     static int getPort() {
