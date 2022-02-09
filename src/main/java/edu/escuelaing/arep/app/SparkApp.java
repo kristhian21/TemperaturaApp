@@ -1,7 +1,5 @@
 package edu.escuelaing.arep.app;
 
-import spark.Spark;
-import spark.utils.IOUtils;
 
 
 import java.io.IOException;
@@ -17,8 +15,8 @@ public class SparkApp {
 
     public static void main(String[] args) {
         port(getPort());
-        get("/celsius", (req, res) -> "Hello" + req.queryParams("celsius"));
-        get("/fahrenheit", (req, res) -> "Hello World");
+        get("/celsius", (req, res) -> "Hello " + req.queryParams("celsius"));
+        get("/fahrenheit", (req, res) -> "La conversion de " + req.queryParams("fahrenheit") + "grados Fahrenheit a grados Celsius es: " + convertFahrToCel(req.queryParams("fahrenheit")));
         get("/", (req, res) -> renderIndex());
     }
 
@@ -39,6 +37,12 @@ public class SparkApp {
         }
         return null;
     }
+
+    private static String convertFahrToCel(String gradosFahr){
+        return String.valueOf(new Fahrenheit(Double.parseDouble(gradosFahr)).convertToCelsius());
+    }
+
+
 
 }
 
