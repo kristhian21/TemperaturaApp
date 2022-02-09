@@ -17,7 +17,8 @@ public class SparkApp {
 
     public static void main(String[] args) {
         port(getPort());
-        get("/celsius", (req, res) -> "Hello World");
+        get("/celsius", (req, res) -> "Hello" + req.params("celsius"));
+        get("/fahrenheit", (req, res) -> "Hello World");
         get("/", (req, res) -> renderIndex());
     }
 
