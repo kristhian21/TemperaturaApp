@@ -22,3 +22,8 @@ Para consumir el API:
 https://conversor-arep.herokuapp.com/
 
 ## Pruebas
+
+Para correr las pruebas hay que ejecutar el metodo main de la clase ConcurrencyTest
+
+<img src="/img/s5.png" alt="pruebas">
+
