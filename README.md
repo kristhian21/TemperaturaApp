@@ -16,3 +16,9 @@ Despliegue en Heroku:
 
 <img src="/img/s3.png" alt="funcionamiento">
 <img src="/img/s4.png" alt="funcionamiento">
+
+Para consumir el API:
+
+https://conversor-arep.herokuapp.com/
+
+## Pruebas
