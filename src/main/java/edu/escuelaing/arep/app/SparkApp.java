@@ -9,6 +9,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import com.google.gson.Gson;
+import spark.Filter;
 
 import static spark.Spark.*;
 
@@ -16,6 +17,10 @@ public class SparkApp {
 
     public static void main(String[] args) {
         port(getPort());
+        after((Filter) (request, response) -> {
+            response.header("Access-Control-Allow-Origin", "*");
+            response.header("Access-Control-Allow-Methods", "GET");
+        });
         get("/celsius", (req, res) -> {
             res.type("application/json");
             return convertToFahrenheit(req.queryParams("celsius"));
