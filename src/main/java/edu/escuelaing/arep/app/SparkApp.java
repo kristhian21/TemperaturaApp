@@ -16,7 +16,6 @@ import static spark.Spark.*;
 public class SparkApp {
 
     public static void main(String[] args) {
-        staticFiles.location("/public");
         port(getPort());
         after((Filter) (request, response) -> {
             response.header("Access-Control-Allow-Origin", "*");
